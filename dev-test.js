@@ -15,6 +15,9 @@ const Blockchain = require("./blockchain");
 
 /**** Test der Block-Funktionalitäten ****/
 const chain = new Blockchain();
-chain.addBlock("daten von Block 1");
-chain.addBlock("daten von Block 2");
+chainLength = 50;
+for (i = 0; i < chainLength; i++){
+    chain.addBlock(`daten von Block ${i+1}`);
+}
+
 console.log(chain);
