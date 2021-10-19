@@ -17,7 +17,7 @@ const Blockchain = require("./blockchain");
 const chain = new Blockchain();
 chainLength = 50;
 for (i = 0; i < chainLength; i++){
-    chain.addBlock(`daten von Block ${i+1}`);
+    chain.addBlock(`Daten von Block ${i+1}`);
 }
 
 console.log(chain);
