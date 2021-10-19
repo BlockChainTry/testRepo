@@ -20,5 +20,8 @@
   "homepage": "https://github.com/BlockChainTry/testRepo#readme",
   "devDependencies": {
     "nodemon": "^2.0.13"
+  },
+  "dependencies": {
+    "crypto-js": "^4.1.1"
   }
 }
