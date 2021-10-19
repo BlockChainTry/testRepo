@@ -17,19 +17,19 @@ class Block{
     }
 
     static genesis(){ // 1. Block der chain
-        return new this("Genesis time","-----","xABc1234",["data1","data2"]); // call constructor
+        return new this("Genesis time", "-----", "x1234cdef", ["data1","data2"]); // call constructor
     }
 
-    static mineBlock(lastBlock,ownData){ // weitere Blocks in der Chain
+    static mineBlock(lastBlock, ownData){ // weitere Blöcke in der Chain
         
         const timestamp = Date.now(); // Zeit im ms seit 01.01.1970 | UNIX
         const lastHash  = lastBlock.hash; // HASH-Wert des Vorgänger-Hashes
-        const hash      = "Hash to Do";
+        const hash      = "Hash ToDo";
 
-        // dazwischen liegt der Miningaufwand .... Energie!!!! / Zeit vergeht ....
-        // Sicher(er) wie Fort Knox! --> Proof of Work
+        // dazwischen liegt der Mining-Aufwand .... Energie!!!! / Zeit vergeht ....
+        // Sicherer als Fort Knox! --> Proof of Work
 
-        return new this(timestamp,lastHash,hash,ownData);
+        return new this(timestamp, lastHash, hash, ownData);
     }
 }
 
