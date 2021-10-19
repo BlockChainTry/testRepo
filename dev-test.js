@@ -3,5 +3,11 @@
 //Import des Moduls
 const Block = require("./block")
 
-const block = new Block("time", "hash1", "hash2", "daten");
-console.log(block.toString());
+// const block = new Block("aktuelle zeit","hash1","hash2","meine Daten");
+// console.log(block.toString());
+
+
+//console.log(Block.genesis().toString());
+
+const testBlock = Block.mineBlock(Block.genesis(),"testDaten")
+console.log(testBlock.toString());
